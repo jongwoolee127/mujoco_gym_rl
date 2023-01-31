@@ -1,5 +1,20 @@
+# mujoco_gym_rl/environment.yml
+# [ref] https://tdhopper.com/blog/my-python-environment-workflow-with-conda
+# update conda env using: conda env update -f <filename>.yml or simply conda env update
+
 name: mujoco_gym_rl
+channels:
+  - conda-forge
+  - defaults
 dependencies: 
   - python=3.9.13
   - numpy
-  - gymnasium[all]
+  - ipython
+  - glfw
+  - scipy
+  - pip
+  - pip: 
+      - gymnasium[all]
+      - mujoco_py # requires: export CC=/opt/homebrew/bin/gcc-12 # make sure the correct version gcc is used...
+# variables:
+#   - CC: /opt/homebrew/bin/gcc-12 # make sure the correct version gcc is used...
