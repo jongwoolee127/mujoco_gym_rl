@@ -1,0 +1,5 @@
+name: mujoco_gym_rl
+dependencies: 
+  - python=3.9.13
+  - numpy
+  - gymnasium[all]
